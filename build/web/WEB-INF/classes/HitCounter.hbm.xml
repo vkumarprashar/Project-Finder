@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 23, 2018 10:12:25 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.HitCounter" table="HITCOUNTER">
+        <id name="sno" type="int">
+            <column name="SNO" />
+            <generator class="identity" />
+        </id>
+        <property name="hitcounter" type="java.lang.Long">
+            <column name="HITCOUNTER" />
+        </property>
+        <property name="Downloads" type="java.lang.Long">
+            <column name="DOWNLOADS" />
+        </property>
+    </class>
+</hibernate-mapping>

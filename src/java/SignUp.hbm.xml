@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 3, 2018 9:30:33 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.SignUp" table="SIGNUP">
+        <id name="email" type="java.lang.String" length="50">
+        	<column name="EMAIL" unique="true"/>
+        	<generator class="assigned" ></generator>
+        </id>
+        
+        <property name="fullname" type="java.lang.String" length="60" >
+            <column name="FULLNAME" />
+        </property>
+        <property name="contact" type="java.lang.String" length="15" unique="true">
+            <column name="CONTACT" />
+        </property>
+        <property name="password" type="java.lang.String" length="32">
+            <column name="PASSWORD" />
+        </property>
+        <property name="gender" type="java.lang.String" length="12">
+            <column name="GENDER" />
+        </property>
+        <property name="sdate" type="java.util.Date" >
+            <column name="SDATE" />
+        </property>
+        <property name="verified" type="int" length="1">
+            <column name="VERIFIED" />
+        </property>
+        <property name="PID" type="java.lang.String">
+            <column name="PID" />
+        </property>
+        <property name="securityques" type="java.lang.String">
+            <column name="SecurityQues" />
+        </property>
+        <property name="securityans" type="java.lang.String">
+            <column name="SecurityAns" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

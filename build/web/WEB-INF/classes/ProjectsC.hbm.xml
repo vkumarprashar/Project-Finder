@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 9, 2018 9:24:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.ProjectsC" table="PROJECTSC">
+        <id name="projectID" type="int" >
+            <column name="PROJECTID" not-null="false" default="null"/>
+            <generator class="identity" />
+        </id>
+        <property name="projectName" type="java.lang.String" length="100">
+            <column name="PROJECTNAME" />
+        </property>
+        <property name="synopsis" type="int" length="1">
+            <column name="SYNOPSIS" />
+        </property>
+        <property name="projectReport" type="int" length="1">
+            <column name="PROJECTREPORT" />
+        </property>
+        <property name="projectPPt" type="int" length="1">
+            <column name="PROJECTPPT" />
+        </property>
+        <property name="uploadedBy" type="java.lang.String" length="100">
+            <column name="UPLOADEDBY" />
+        </property>
+        <property name="downloads" type="int" >
+            <column name="DOWNLOADS" />
+        </property>
+        <property name="cost" type="int" length="6">
+            <column name="COST" />
+        </property>
+        <property name="aboutProject" type="java.lang.String" length="1000">
+            <column name="ABOUTPROJECT" />
+        </property>
+    </class>
+</hibernate-mapping>

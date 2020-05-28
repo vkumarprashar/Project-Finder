@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.default_schema">project</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <mapping resource="reviewBean.hbm.xml"/>
+    <mapping resource="RequestedApplications.hbm.xml"/>
+    <mapping resource="HitCounter.hbm.xml"/>
+    <mapping resource="SignUp.hbm.xml"/>
+    <mapping resource="UserDetails.hbm.xml"/>
+    <mapping resource="ProjectsAjax.hbm.xml"/>
+    <mapping resource="ProjectsAndroid.hbm.xml"/>
+    <mapping resource="ProjectsC.hbm.xml"/>
+    <mapping resource="ProjectsCplus.hbm.xml"/>
+    <mapping resource="ProjectsIOS.hbm.xml"/>
+    <mapping resource="ProjectsJ2EE.hbm.xml"/>
+    <mapping resource="ProjectsJava.hbm.xml"/>
+    <mapping resource="ProjectsKotlin.hbm.xml"/>
+    <mapping resource="ProjectsPerl.hbm.xml"/>
+    <mapping resource="ProjectsPHP.hbm.xml"/>
+    <mapping resource="ProjectsPython.hbm.xml"/>
+    <mapping resource="ProjectsRuby.hbm.xml"/>
+    <mapping resource="ProjectsRubyOnRails.hbm.xml"/>
+    <mapping resource="ProjectsTemplates.hbm.xml"/>
+    <mapping resource="ProjectsVbNet.hbm.xml"/>
+    <mapping resource="ExtraInsert.hbm.xml"/>
+    <mapping resource="subscribe.hbm.xml"/>
+    <mapping resource="DemandRequest.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

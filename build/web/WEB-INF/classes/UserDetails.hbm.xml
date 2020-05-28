@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 3, 2018 9:30:33 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.UserDetails" table="USERDETAILS">
+        <id name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </id>
+        <property name="android" type="int" length="1">
+            <column name="ANDROID" />
+        </property>
+        <property name="ajax" type="int" length="1">
+            <column name="AJAX" />
+        </property>
+        <property name="c" type="int" length="1">
+            <column name="C" />
+        </property>
+        <property name="cplus" type="int" length="1">
+            <column name="CPLUS" />
+        </property>
+        <property name="htmlandcss" type="int" length="1">
+            <column name="HTMLANDCSS" />
+        </property>
+        <property name="ios" type="int" length="1">
+            <column name="IOS" />
+        </property>
+        <property name="java" type="int" length="1">
+            <column name="JAVA" />
+        </property>
+        <property name="kotlin" type="int" length="1">
+            <column name="KOTLIN" />
+        </property>
+        <property name="perl" type="int" length="1">
+            <column name="PERL" />
+        </property>
+        <property name="python" type="int" length="1">
+            <column name="PYTHON" />
+        </property>
+        <property name="ruby" type="int" length="1">
+            <column name="RUBY" />
+        </property>
+        <property name="rublyonrails" type="int" length="1">
+            <column name="RUBLYONRAILS" />
+        </property>
+        <property name="vbnet" type="int" length="1">
+            <column name="VBNET" />
+        </property>
+        <property name="j2ee" type="int" length="1">
+            <column name="J2EE" />
+        </property>
+        <property name="php" type="int" length="1">
+            <column name="PHP" />
+        </property>
+        <property name="subscribed" type="int" length="1">
+            <column name="SUBSCRIBED" />
+        </property>
+        <set name="requestapp" cascade="all">
+            <key>
+                <column name="EMAIL" />
+            </key>
+            <one-to-many class="BeanClasses.RequestedApplications"/>
+        </set>
+    </class>
+</hibernate-mapping>

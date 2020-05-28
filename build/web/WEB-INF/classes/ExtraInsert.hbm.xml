@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="BeanClasses.ExtraInsert" table="EXTRAINSERT">
+        <id name="email" type="java.lang.String">
+            <column name="EMAIL" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="about" type="java.lang.String">
+            <column name="ABOUT" />
+        </property>
+        <property name="synopsis" type="int" length="1">
+            <column name="SYNOPSIS" />
+        </property>
+        <property name="report" type="int" length="1">
+            <column name="REPORT" />
+        </property>
+        <property name="ppt" type="int" length="1">
+            <column name="PPT" />
+        </property>
+        <property name="cost" type="int">
+            <column name="COST" />
+        </property>
+    </class>
+</hibernate-mapping>

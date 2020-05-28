@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 17, 2018 10:09:43 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.reviewBean" table="REVIEWS">
+        <id name="sno" type="integer" >
+        	<column name="SNO" not-null="false" default="null"  />
+        	<generator class="identity" ></generator>
+        </id>
+        <property name="name" type="java.lang.String" length="50">
+            <column name="NAME" />
+        </property>
+        <property name="email" type="java.lang.String" length="50">
+            <column name="EMAIL" />
+        </property>
+        <property name="contact" type="java.lang.String" length="15">
+            <column name="CONTACT" />
+        </property>
+        <property name="message" type="java.lang.String" length="500">
+            <column name="MESSAGE" />
+        </property>
+        <property name="date" type="java.sql.Date">
+            <column name="DATE" />
+        </property>
+        <property name="time" type="java.sql.Time">
+            <column name="TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

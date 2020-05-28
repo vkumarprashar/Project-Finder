@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 21, 2018 5:56:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BeanClasses.RequestedApplications" table="REQUESTEDAPPLICATIONS">
+        <id name="sno" type="int">
+            <column name="SNO" />
+            <generator class="identity" />
+        </id>
+        <property name="projectname" type="java.lang.String">
+            <column name="PROJECTNAME" />
+        </property>
+        <property name="technology" type="java.lang.String">
+            <column name="TECHNOLOGY" />
+        </property>
+        <property name="about" type="java.lang.String">
+            <column name="ABOUT" />
+        </property>
+        <property name="time" type="java.sql.Timestamp">
+            <column name="TIME" />
+        </property>
+        <property name="cost" type="int" length="1">
+            <column name="COST" />
+        </property>
+        <property name="status" type="int" >
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
